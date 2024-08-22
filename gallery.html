@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media - Mindease Counseling</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+   
+</head>
+<body>
+   
+    <header>
+        <h1>Personal Touch Creations</h1>
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        <nav id="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="blog.html">Blog</a>
+            <a href="gallery.html">Media</a>
+            <a href="testimonial.html">Testimonials</a>
+            <a href="about.html">About us</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class="image-gallery">
+        <img src="./assets/gift10.jpg" alt="Gift Box" title="Beautifully Wrapped Gift Box" onclick="openModal('modal1')">
+        <img src="./assets/gift2.jpg" alt="Personalized Mug" title="Custom Printed Mug" onclick="openModal('modal2')">
+        <img src="./assets/gift5.jpg" alt="Engraved Frame" title="Engraved Wooden Frame" onclick="openModal('modal3')">
+    </div>
+
+    <!-- Modals for enlarged images -->
+    <div id="modal1" class="modal">
+        <span class="close" onclick="closeModal('modal1')">&times;</span>
+        <div class="modal-content">
+            <img src="./assets/gift10.jpg" alt="Gift Box">
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <span class="close" onclick="closeModal('modal2')">&times;</span>
+        <div class="modal-content">
+            <img src="./assets/gift2.jpg" alt="Personalized Mug">
+        </div>
+    </div>
+
+    <div id="modal3" class="modal">
+        <span class="close" onclick="closeModal('modal3')">&times;</span>
+        <div class="modal-content">
+            <img src="./assets/gift5.jpg" alt="Engraved Frame">
+        </div>
+    </div>
+
+
+    <section class="media-section">
+        <h1>Explore More with Personal Touch Creation</h1>
+
+        <div class="video">
+            <h2>Gift Ideas - Watch Our Latest Video</h2>
+            <iframe width="715" height="402" src="https://www.youtube.com/embed/cckwWh5Q1xU" title="Custom Corporate Gifting Made Simple" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <div class="audio">
+            <h2>Relaxing Music for Gift Wrapping</h2>
+            <audio controls>
+                <source src="./assets/test.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <div class="business-name">Personal Touch Creation</div>
+            <div class="address">
+                5678 Creative Lane, Suite 123<br>
+                Giftville, GV 56789<br>
+                USA
+            </div>
+            <div class="social-media">
+                <a href="https://www.facebook.com/personaltouchcreation" target="_blank">Facebook</a> |
+                <a href="https://www.twitter.com/personaltouchcreation" target="_blank">Twitter</a> |
+                <a href="https://www.instagram.com/personaltouchcreation" target="_blank">Instagram</a> |
+                <a href="https://www.linkedin.com/company/personaltouchcreation" target="_blank">LinkedIn</a>
+            </div>
+            <div class="copyright">&copy; 2024 Personal Touch Creation. All rights reserved.</div>
+        </div>
+    </footer>
+
+    <script>
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = "block";
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = "none";
+        }
+    </script>
+
+
+</body>
+</html>

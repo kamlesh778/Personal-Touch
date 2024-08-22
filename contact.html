@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Personal Touch Creations</h1>
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        <nav id="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="blog.html">Blog</a>
+            <a href="gallery.html">Media</a>
+            <a href="testimonial.html">Testimonials</a>
+            <a href="about.html">About us</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <section class="contact-section">
+        <div class="contact-info">
+            <h1>Contact Us</h1>
+            <p>Need to get in touch with us? Either fill out the form with your inquiry or reach us via email at <a href="mailto:support@personaltouchcreation.com">support@personaltouchcreation.com</a>.</p>
+            <p>Follow us on social media:</p>
+            <p>
+                <a href="https://www.facebook.com/personaltouchcreation" target="_blank">Facebook</a> | 
+                <a href="https://www.twitter.com/personaltouchcreation" target="_blank">Twitter</a> | 
+                <a href="https://www.instagram.com/personaltouchcreation" target="_blank">Instagram</a> | 
+                <a href="https://www.linkedin.com/company/personaltouchcreation" target="_blank">LinkedIn</a>
+            </p>
+        </div>
+        <div class="contact-form">
+            <form action="#" method="post" onsubmit="validateForm(event)">
+                <div class="form-group">
+                    <label for="first-name">First name*</label>
+                    <input type="text" id="first-name" name="first-name" required>
+                    <div id="first-name-error" class="error-message"></div>
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Last name</label>
+                    <input type="text" id="last-name" name="last-name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email*</label>
+                    <input type="email" id="email" name="email" required>
+                    <div id="email-error" class="error-message"></div>
+                </div>
+                <div class="form-group">
+                    <label for="message">What can we help you with?</label>
+                    <textarea id="message" name="message" rows="5"></textarea>
+                </div>
+                <button type="submit" class="submit-button">Submit</button>
+                <div class="success-message"></div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="business-name">Personal Touch Creation</div>
+            <div class="address">
+                5678 Creative Lane, Suite 123<br>
+                Giftville, GV 56789<br>
+                USA
+            </div>
+            <div class="social-media">
+                <a href="https://www.facebook.com/personaltouchcreation" target="_blank">Facebook</a> |
+                <a href="https://www.twitter.com/personaltouchcreation" target="_blank">Twitter</a> |
+                <a href="https://www.instagram.com/personaltouchcreation" target="_blank">Instagram</a> |
+                <a href="https://www.linkedin.com/company/personaltouchcreation" target="_blank">LinkedIn</a>
+            </div>
+            <div class="copyright">&copy; 2024 Personal Touch Creation. All rights reserved.</div>
+        </div>
+    </footer>
+</body>
+</html>
